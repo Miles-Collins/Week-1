@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--NOTE link to bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- NOTE best practice to load your css after bootstrap css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Landing page</title>
+  <style>
+    body.debug * {
+      min-height: 25px;
+    }
+
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+</head>
+
+<body class="">
+  <!-- SECTION Navbar -->
+  <!-- NOTE sticky top sticks to the PARENT, so in this case sticks to the body -->
+  <nav class="container-fluid bg-warning p-3 fw-bold sticky-top">
+    <div class="row">
+
+      <!-- NOTE one way to arrange things in a row -->
+      <div class="col-2"></div>
+      <div class="col-2 text-white">
+        <h4>CodeBreakers</h4>
+      </div>
+      <!-- NOTE a second way to arrange things -->
+      <a href="#about" class="col-1 offset-3">About</a>
+      <a href="#languages" class="col-1">Languages</a>
+      <a href="#courses" class="col-1">Courses</a>
+      <a href="https://boisecodeworks.com" class="col-1">Contact</a>
+    </div>
+  </nav>
+  <header class="container-fluid">
+    <!-- SECTION hero image -->
+    <section class="row justify-content-center hero-img p-2 p-md-5">
+      <!-- NOTE col on smallest screen starts at 12, then as screen gets bigger, the col gets progressively smaller -->
+      <div class="col-12 col-sm-10 col-md-8 text-light text-center">
+        <h1>INSTRUCING SOFTWARE DEVELOPERS</h1>
+        <!-- NOTE the x in the px means that it only applies to the x axis, and vice versa with the y -->
+        <button class="btn btn-warning px-3 py-2 fw-bold text-light rounded-pill">Learn more</button>
+      </div>
+    </section>
+  </header>
+  <!-- NOTE left or right padding/margin on the container (rows are iffy sometimes) -->
+  <main class="container-fluid">
+    <!-- NOTE columns example -->
+    <!-- <section class="row">
+      <div class="col-1">
+        <p>column 1</p>
+      </div>
+      <div class="col-2">
+        column 2
+      </div>
+      <div class="col-3">column 3</div>
+      <div class="col-4">column 4</div>
+      <div class="col-4">column 4</div>
+    </section> -->
+    <!-- SECTION about us  -->
+    <div class="row bg-dark fixed-bottom text-light text-center"> 🦍</div>
+    <section id="about" class="row bg-danger text-white p-5 justify-content-center">
+      <div class="col-12 text-center">
+        <h3>About us</h3>
+      </div>
+      <div class="col-12 col-md-7">
+        <p>Lorem Khaled Ipsum is a major key to success. They don’t want us to win. Eliptical talk. Mogul talk. Surround
+          yourself with angels. Hammock talk come soon. To succeed you must believe. When you believe, you will succeed.
+          It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. The
+          weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! The key
+          is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski,
+          they don’t want you to smile.</p>
+        <p>
+          Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears,
+          and I’m never giving up, I’m just getting started. Let me be clear, you have to make it through the jungle to
+          make it to paradise, that’s the key, Lion! It’s on you how you want to live your life. Everyone has a choice.
+          I pick my choice, squeaky clean. The key to more success is to get a massage once a week, very important,
+          major key, cloth talk.
+        </p>
+      </div>
+    </section>
+    <!-- SECTION language and tools -->
+    <section id="languages" class="row bg-white py-5 justify-content-center">
+      <div class="col-12 text-center text-danger">
+        <h3>Language and Tools</h3>
+      </div>
+      <!-- NOTE screen size 'infix' 12 is the default size, while the md-10 is the size on medium screens and LARGER -->
+      <div class="col-12 col-md-10">
+        <div class="row my-1 justify-content-around">
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+        </div>
+        <div class="row my-1 justify-content-around">
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+        </div>
+        <div class="row my-1 justify-content-around">
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+          <div class="col-3 col-md">
+            <img class="img-fluid" src="https://markohnsman.github.io/img/Languages/git.png" alt="">
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+    <!-- SECTION Courses -->
+    <section id="courses">
+      <div class="row bg-white">
+        <div class="col-12">
+          <h3 class="text-danger text-center fw-bold">Courses</h3>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/2.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- SECTION  -->
+
+  </main>
+
+
+  <!-- NOTE if you are loading javascript in it should be at the bottom of the body -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
