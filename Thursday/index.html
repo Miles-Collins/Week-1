@@ -36,7 +36,7 @@
     <section>
       <div class="row navbar clear-nav fixed-bottom shadow rounded text-light text-center text-shadow">
           <a class="col-3 unlink unlink:hover" href="#home">Home</a>
-          <a class="col-3 unlink unlink:hover" href="#main">Jane & John</a>
+          <a class="col-3 unlink unlink:hover" href="#main">Jane & Jon</a>
           <a class="col-3 unlink unlink:hover" href="#wedding">Wedding</a>
           <a class="col-3 unlink unlink:hover" href="#rsvp">RSVP</a>
         </div>
@@ -46,35 +46,43 @@
     <section id="home" class="container-fluid text-center">
       <div class="hero-img row align-items-center text-center">
           <div class="col-12 text-shadow text-light">
-            <h1 class="py-4">Jane & John</h1>
-             <h3 class="py-1"> Are getting married</h3>
-             <h3>23/02/2023</h3> 
+            <h1 class="py-2">Jane & John</h1>
+            <!-- NOTE DISPLAY MOBILE -->
+            <div class="d-sm-none">
+              <h2 class="py-1"> Are getting married</h2>
+              <h3>23.02.2023</h3> 
             </div>
+            <!-- NOTE DISPLAY DESKTOP -->
+            <div class="d-none d-sm-block">
+             <h2 class="py-1"> Are getting married</h2>
+             <h2>23.02.2023</h2> 
+            </div>
+          </div>
 
       </div>
     </section>
   </header>
   <!-- SECTION MAIN -->
-  <main>
-    <section id="main" class="text-shadow container-fluid text-center justify-content-center">
+  <main class="container-fluid">
+    <section id="main" class=" page text-shadow container-fluid text-center justify-content-center">
       <div class="row">
-        <div class="col-12 my-5">
+        <div class="col-12 my-3">
           <h2 class="">Jane & Jon</h2>
         </div>
         <div class="col-12">
-          <img class="img-fluid width rounded-3" src="https://images.unsplash.com/photo-1551963319-13ff32a5acd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1551963319-13ff32a5acd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
         </div>
         <!-- NOTE DISPLAY MOBILE -->
         <div class="pt-5 d-md-none">
-          <p>We're getting married! Please come, we will have food and drinks. Please tell us if you're bringing any extra guest. Please no children, or pets.</p>
+          <p>We're getting married! Please come, we will have food and drinks. Please tell us if you're bringing any extra guest. Please no children, or pets. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise.</p>
         </div>
         <!-- NOTE DISPLAY DESKTOP -->
-        <div class="d-none d-md-block col-md-12 my-5">
+        <div class="d-none d-md-block col-md-12 my-3 px-5">
           <p>Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. The key to success is to keep your head above the water, never give up. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.
 
             We don’t see them, we will never see them. We the best. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. How’s business? Boomin. They key is to have every key, the key to open every door. Fan luv. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! They key is to have every key, the key to open every door.</p>
 
-          <button class="btn btn-dark my-5 py-2 px-3">
+          <button class="btn btn-dark py-2 px-3">
             Wedding Details
           </button>
         </div>
@@ -85,19 +93,26 @@
       <div class="row invitation-img text-light align-items-center text-shadow">
           <div class="col">
             <h1 class="pb-5">You're Invited</h1>
-            <h4 class="pt-1">Of course.</h4>
+            <!-- NOTE DISPLAY MOBILE -->
+            <div class="d-sm-none">
+            <h2 class="pt-1">Of course.</h2>
+            <!-- NOTE DISPLAY DESKTOP -->
+            </div>
+            <div class="d-none d-sm-block">
+            <h2>Of course.</h2>
+            </div>
           </div>
       </div>
     </div>
     </section>
     <!--SECTION THE WEDDING -->
-    <section id="wedding" class="justify-text-center text-center">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="my-5 text-shadow">THE WEDDING</h2>
+    <section id="wedding" class="container-fluid">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-m-12">
+          <h2 class=" text-shadow py-3">THE WEDDING</h2>
         </div>
-        <div class="col-12 mx-2">
-          <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+        <div class="col-md-8">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
         </div>
       </div>
     </section>
